@@ -79,12 +79,6 @@ Le programme suit une boucle de jeu standard (*Game Loop*) :
 
 ### Flux de Travail Git (Workflow)
 
-Pour ce projet, nous adoptons une approche structurée :
-
-* **Main Branch** : Version stable et jouable.
-* **Features Branches** : Développement de fonctionnalités spécifiques (ex: `feat/logic-collision`, `feat/linux-port`).
-* **Commits** : Messages clairs (ex: `fix: correction du bug de collision sur les bords`).
-
 ---
 
 ## 2. README.md (Format Markdown)
@@ -132,13 +126,6 @@ gcc -o snake snake.c
 
 ```
 
----
-
-## 3. Résumé : Projet snake game
-
-Projet de jeu Snake en langage C utilisant la console pour l'affichage graphique en caractères ASCII. Le système gère les déplacements du serpent, la génération aléatoire de nourriture et l'évolution de la taille du serpent à chaque point marqué. Le score est mis à jour en temps réel et affiché sous la zone de jeu, avec une gestion fluide des entrées clavier pour diriger l'entité.
-
-La logique du jeu intègre deux conditions de défaite critiques : la collision avec les bordures de la fenêtre et l'autocollision du serpent avec sa propre queue. Le développement a été structuré de manière modulaire (Setup, Draw, Input, Logic) pour faciliter la maintenance et l'évolution du code. L'utilisation de Git et GitHub a permis un versionnage efficace du projet, assurant le suivi des modifications et la gestion du code source. Le rendu visuel a été optimisé par une gestion directe du curseur (goToXY) afin d'éliminer le scintillement de l'écran, offrant ainsi une expérience de jeu fluide sur terminal.
 
 ---
 
