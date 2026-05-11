@@ -16,12 +16,7 @@ Vous aurez besoin de `gcc` (le compilateur C). Sur EndeavourOS, installez-le via
 sudo pacman -S base-devel
 
 
-
-
-
 -------------------------------------------------------
-
-
 
 
 ### Architecture du Code
