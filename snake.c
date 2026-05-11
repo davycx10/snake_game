@@ -113,37 +113,22 @@ void draw() {
     printf("Controls: Z, A, S, D | X to Quit\n");
 }
 
-void input() {
-    if(kbhit()){
-        int ch = getchar();
-        // gestion des touche special
-        if (ch == 0 || ch == 225){
-            ch = getchar();
-            switch(ch){
-                // fleche gauche
-                case 75: if (key != 2) key = 1; break;
+void input(){
+    if (kbhit())
+    {
+        char ch = getchar();
+        switch (ch){
+            case 'q':if (key !=2) key = 1; break;
+            case 'd':if (key !=1) key = 2; break;
+            case 'z':if (key !=4) key = 3; break;
+            case 's':if (key !=3) key = 4; break;
+            case 'X': gameover = 1; break;
+            
 
-                // fleche droite
-                case 77: if (key != 1) key = 2; break;
-
-                // fleche haut
-                case 72: if (key != 4) key = 3; break;
-
-                // fleche bas
-                case 80: if (key != 3) key = 4; break;
-            }
         }
-        else {
-            //  ZQSD
-            switch (tolower(ch)){
-                case 'q': if (key != 2) key = 1;  break;
-                case 'd': if (key != 1) key = 2; break;
-                case 'z': if (key != 4) key = 3; break;
-                case 's': if (key != 3) key = 4; break;
-                case 'x': gameover = 5;  break;
-            }
-        }
+        
     }
+    
 }
 
 void logic() {
